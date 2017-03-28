@@ -3,13 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net45</TargetFramework>
     <RootNamespace>PCLStorage</RootNamespace>
-    <Version>1.0.3</Version>
+    <VersionPrefix>1.0.3</VersionPrefix>
     <Authors>Daniel Plaisted, Victor Milovanov</Authors>
     <Product>PCLStorage</Product>
     <PackageLicenseUrl>https://github.com/losttech/PCLStorage.Abstractions/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/losttech/PCLStorage.Abstractions</PackageProjectUrl>
-    <AssemblyVersion>1.0.3</AssemblyVersion>
-    <FileVersion>1.0.3</FileVersion>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/losttech/PCLStorage.Abstractions.git</RepositoryUrl>
     <Description>This library only contains interfaces. No implementations are provided.
