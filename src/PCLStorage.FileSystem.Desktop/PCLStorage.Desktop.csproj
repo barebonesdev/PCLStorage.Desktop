@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <RootNamespace>PCLStorage</RootNamespace>
+    <Version>1.0.3</Version>
+    <Authors>Daniel Plaisted, Victor Milovanov</Authors>
+    <Product>PCLStorage</Product>
+    <PackageLicenseUrl>https://github.com/losttech/PCLStorage.Abstractions/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/losttech/PCLStorage.Abstractions</PackageProjectUrl>
+    <AssemblyVersion>1.0.3</AssemblyVersion>
+    <FileVersion>1.0.3</FileVersion>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/losttech/PCLStorage.Abstractions.git</RepositoryUrl>
+    <Description>This library only contains interfaces. No implementations are provided.
+
+PCL Storage provides a consistent, portable set of local file IO APIs for .NET, Windows Phone, Windows Store, Xamarin.iOS, Xamarin.Android, and Silverlight.  This makes it easier to create cross-platform .NET libraries and apps.</Description>
+    <Summary>File system abstraction, .NET Standard-based.</Summary>
+    <PackageTags>io storage file dotnet</PackageTags>
+    <PackageReleaseNotes>Releasing abstractions as a separate .NET Standard-compatible library. There's no implementation yet!</PackageReleaseNotes>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyFile>..\..\common\strongnamekey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PCLStorage.Abstractions" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+</Project>

@@ -59,12 +59,6 @@
     <Compile Include="Requires.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PCLStorage.Abstractions\PCLStorage.Abstractions.csproj">
-      <Project>{eebb53f3-ebdf-4dd0-82e5-ff9a2c8dbd72}</Project>
-      <Name>PCLStorage.Abstractions</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Microsoft.Threading.Tasks">
       <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\portable-net40+sl4+win8+wp71\Microsoft.Threading.Tasks.dll</HintPath>
     </Reference>

@@ -48,14 +48,26 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\net45\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.3.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.Abstractions.1.0.3\lib\netstandard1.0\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="PCLTesting">
       <HintPath>..\..\packages\PCLTesting.0.1.1\lib\net45\PCLTesting.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -90,13 +102,9 @@
     <Compile Include="UIDispatcherMock.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\PCLStorage.Abstractions\PCLStorage.Abstractions.csproj">
-      <Project>{eebb53f3-ebdf-4dd0-82e5-ff9a2c8dbd72}</Project>
-      <Name>PCLStorage.Abstractions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\PCLStorage.FileSystem.Desktop\PCLStorage.FileSystem.Desktop.csproj">
+    <ProjectReference Include="..\..\src\PCLStorage.FileSystem.Desktop\PCLStorage.Desktop.csproj">
       <Project>{9d3f208d-8bb4-47a9-8323-4cfd24314341}</Project>
-      <Name>PCLStorage.FileSystem.Desktop</Name>
+      <Name>PCLStorage.Desktop</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
