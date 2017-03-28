@@ -30,15 +30,7 @@ namespace PCLStorage
 
         static IFileSystem CreateFileSystem()
         {
-#if NETFX_CORE || WINDOWS_PHONE
-			return new WinRTFileSystem();
-#elif SILVERLIGHT
-			return new IsoStoreFileSystem();
-#elif FILE_SYSTEM
             return new DesktopFileSystem();
-#else
-            return null;
-#endif
         }
 
         internal static Exception NotImplementedInReferenceAssembly()
