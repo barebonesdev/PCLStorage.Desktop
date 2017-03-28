@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net45</TargetFramework>
     <RootNamespace>PCLStorage</RootNamespace>
-    <VersionPrefix>1.0.3</VersionPrefix>
+    <VersionPrefix>1.0.4</VersionPrefix>
     <Authors>Daniel Plaisted, Victor Milovanov</Authors>
     <Product>PCLStorage</Product>
     <PackageLicenseUrl>https://github.com/losttech/PCLStorage.Abstractions/blob/master/LICENSE</PackageLicenseUrl>
@@ -22,7 +22,7 @@ PCL Storage provides a consistent, portable set of local file IO APIs for .NET, 
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PCLStorage.Abstractions" Version="1.0.3" />
+    <PackageReference Include="PCLStorage.Abstractions" Version="1.0.4-b2017032702" />
   </ItemGroup>
 
   <ItemGroup>
