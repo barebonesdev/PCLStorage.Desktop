@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <AssemblyName>PCLStorage.Standard</AssemblyName>
+    <RootNamespace>PCLStorage</RootNamespace>
+    <Authors>Daniel Plaisted, Victor Milovanov</Authors>
+    <Company>Daniel Plaisted, Victor Milovanov</Company>
+    <Product>PCLStorage</Product>
+    <Description>PCL Storage provides a consistent, portable set of local file IO APIs for .NET, Windows Phone, Windows Store, Xamarin.iOS, Xamarin.Android, and Silverlight.  This makes it easier to create cross-platform .NET libraries and apps.</Description>
+    <PackageLicenseUrl>https://github.com/losttech/PCLStorage.Desktop/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/losttech/PCLStorage.Desktop</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/losttech/PCLStorage.Desktop.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>io storage file dotnet</PackageTags>
+    <AssemblyVersion>1</AssemblyVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\PCLStorage.FileSystem.Desktop\AwaitExtensions.cs" Link="AwaitExtensions.cs" />
+    <Compile Include="..\PCLStorage.FileSystem.Desktop\Exceptions\PCLStorageExceptions.cs" Link="Exceptions\PCLStorageExceptions.cs" />
+    <Compile Include="..\PCLStorage.FileSystem.Desktop\FileSystemFile.cs" Link="FileSystemFile.cs" />
+    <Compile Include="..\PCLStorage.FileSystem.Desktop\FileSystemFolder.cs" Link="FileSystemFolder.cs" />
+    <Compile Include="..\PCLStorage.FileSystem.Desktop\PortablePath.cs" Link="PortablePath.cs" />
+    <Compile Include="..\PCLStorage.FileSystem.Desktop\Requires.cs" Link="Requires.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PCLStorage.Abstractions" Version="1.0.3" />
+  </ItemGroup>
+
+</Project>

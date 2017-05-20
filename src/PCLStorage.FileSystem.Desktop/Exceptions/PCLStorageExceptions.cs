@@ -33,7 +33,7 @@ namespace PCLStorage.Exceptions
     public class DirectoryNotFoundException
 #if PORTABLE
         : IOException
-#elif NETFX_CORE
+#elif NETFX_CORE || NETSTANDARD1_0
         : System.IO.FileNotFoundException
 #else
         : System.IO.DirectoryNotFoundException
