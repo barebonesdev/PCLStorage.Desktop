@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <AssemblyName>PCLStorage.Standard</AssemblyName>
+    <AssemblyName>PCLStorage.Standard.BareBonesDev</AssemblyName>
     <RootNamespace>PCLStorage</RootNamespace>
     <Authors>Daniel Plaisted, Victor Milovanov, BareBones Dev</Authors>
     <Company>Daniel Plaisted, Victor Milovanov, BareBones Dev</Company>
